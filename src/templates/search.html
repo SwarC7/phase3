@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <!-- <img src="https://cdn-icons-png.flaticon.com/512/6273/6273967.png"> -->
+    <link rel="icon" type="png" href="../static/Mlogo.png"/>
+
+    <link rel="stylesheet" href="../static/search_style.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">
+            <img src="../static/logo.png" alt="Navigation Icon">
+        </a>
+        <label class="logo"></label>
+        <ul style="list-style-type: none;">
+            <li ><a href="home.html" style="margin-right: 0%;">Heim</a></li>
+            <li><a href="Artists.html" style="margin-right: 0%;">Künstler</a></li>
+            <li><a href="about.html" style="text-align: center;">About</a></li>
+            <li><a href="search.html" style="text-align: center;">Suchen</a></li>
+            <li><a href="Artistspotlight.html">Punktlicht<span class="line top"></span><span class="line bottom"></span></a></li>
+            <li><a href="playlist.html">Laufliste</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="search">
+            <input class="bigsearch" type="text" id="bigsearch" placeholder="Search Musik" onkeyup="keyclick(event)">
+            <button class="search-btn" onclick="find()" id="clickbutton">
+                <img class ="search-btn" src="../static/search.png">
+            </button>
+        </div>
+
+        <div class="filterbox">
+            <a>Fitler</a>
+            <input type="checkbox" id="turnfilter">
+        </div>
+
+        <div class="filter">
+            <p></p>
+            <input class="minrange" type="text" id="minrange" placeholder="Duration" onkeyup="keyclick(event)">
+        </div>
+        <div class="expl">
+            <a>not explicit </a>
+            <label class="switch">
+                <input type="checkbox" id="checkexp">
+                <span class="slider round"></span>
+            </label>
+            <a>explicit</a>
+        </div>
+        <!-- <div class="opts">
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by">
+                <option value="none">No sorting</option>
+                <option value="explicit">Explicitness</option>
+                <option value="non-explicit">Non-Explicitness</option>
+            </select>
+        </div> -->
+        <div class="content">
+            <ol class="print" id="print"></ol>
+        </div>
+     <!-- <div class="search-bar">
+        <input id="bigsearch" type="text" name="search" pattern=".*\S.*" required onkeyup="keyclick(event)" >
+        <button class="search-btn" type="text" onclick="find()" id="clickbutton">
+            <span>Search</span>
+        </button> -->
+    </div>
+
+    
+    <script src="../static/search_script.js"></script>
+</body>
+</html>

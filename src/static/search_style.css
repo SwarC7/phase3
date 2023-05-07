@@ -1,0 +1,265 @@
+
+@import url("https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Roboto:wght@100&display=swap');
+
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+nav{
+    position: fixed;
+    z-index: 9999;
+}
+
+label.logo{
+    color: #e8cdcd;
+    padding: 20px 100px;
+    font-size: 55px;
+}
+
+body{
+    background-color: #700606;
+    background: #000000;
+    background: #2762f3;
+    background: #171717;
+}
+
+nav a img {
+    width: 500px;
+    height: 100px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    margin-right: 10px;
+  }
+
+nav {
+    list-style-type: none;
+    display:block;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    
+    background-color: #191919;
+    border-radius: 0px;
+    color: white;
+     font-family: 'Montserrat', sans-serif;/*'Archivo',sans-serif;*/
+    font-weight: bold;
+    height: 100px;
+    font-size: 0rem;
+}
+
+nav ul{
+    margin-inline-end: 80px;
+    float: right;
+}
+nav ul li {
+  margin: 0;
+  padding: 0;
+  display:inline-block;
+  line-height: 80px;
+  margin: 0 1vw;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 2px; 
+  transition: all 0.2s ease-in-out;
+  float: right;
+  /* F8B0B0 */
+  
+}
+nav ul li a:hover {
+    /* background-color: rgba(99, 99, 99, 0.32); */
+    color: #ad1110;
+    border-radius: 0.1rem;
+    
+}
+
+
+
+.content .print{
+    padding-top: 40px;
+    color: #ffffff;
+}
+
+.container{
+    /* padding-left: 35%; */
+    display: flex;
+  flex-direction: column;
+    padding-top: 150px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+    /* background-color: #2762f3; */
+}
+
+
+.filter{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    /* background-color: #191919; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  color: #2762f3;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px);
+  }
+  
+  /* Rounded sliders */
+  .expl{
+    color: white;
+    font-family: 'Archivo', sans-serif;;
+  }
+
+  .slider.round {
+    border-radius: 16px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.container .search{
+    padding-left: 50px;
+}
+
+.result-item{
+    width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigsearch{
+    box-shadow: none;
+}
+
+
+
+.search{
+    display: flex;
+  align-items: center;
+}
+
+.search-btn img{
+    width: auto;
+    height: 35px;
+    object-fit: contain;
+    /* padding-top: 10px; */
+}
+
+.bigsearch input::placeholder{
+    padding-left: 20px;
+    color: #2196F3;
+}
+
+.filterbox{
+    color: white;
+    font-family: 'Archivo', sans-serif;
+    padding-top: 20px;
+}
+
+.search input[type="text"] {
+    background-color: #272727;
+    display: inline-block;
+    border: 1px solid black;
+    width: 400px;
+    height: 40px;
+    font-family: 'Archivo', sans-serif;
+    ;
+    font-size: 20px;
+    color: #ffffff;
+    
+  }
+.filter input{
+    background-color: #726e6e;
+    border: #797777;
+    color: #fcfbfb;
+}
+
+.filter input::placeholder {
+    color: rgb(255, 255, 255);
+    font-family: 'Work Sans', sans-serif;
+    padding-left: 5px;
+  }
+
+
+  .result-item-name{
+    font-family: 'Archivo', sans-serif;
+  }
+
+  .result-item-artist{
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.result-item-image{
+    padding-top:80px;
+    height: 300px;
+    width: 300px;
+}
+

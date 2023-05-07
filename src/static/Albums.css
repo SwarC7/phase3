@@ -1,0 +1,231 @@
+
+@import url("https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300");
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap'); 
+  
+
+  @import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700");
+
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+nav{
+  position: fixed;
+  z-index: 9999;
+}
+
+label.logo{
+  color: #e8cdcd;
+  padding: 20px 100px;
+  font-size: 55px;
+}
+
+body{
+  background-color:#2a2c24
+}
+
+nav a img {
+  width: 500px;
+  height: 100px;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  margin-right: 10px;
+}
+
+nav {
+  list-style-type: none;
+  display:block;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 100%;
+  
+  background-color: #161616;
+  border-radius: 0px;
+  color: white;
+   font-family: 'Montserrat', sans-serif;/*'Archivo',sans-serif; */
+  font-weight: bold;
+  height: 100px;
+  font-size: 0rem;
+}
+
+nav ul{
+  margin-inline-end: 80px;
+  float: right;
+}
+nav ul li {
+  margin: 0;
+  padding: 0;
+  display:inline-block;
+  line-height: 80px;
+  margin: 0 1vw;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 2px; 
+  transition: all 0.2s ease-in-out;
+  float: right;
+  /* F8B0B0 */
+  
+}
+nav ul li a:hover {
+  /* background-color: rgba(99, 99, 99, 0.32); */
+  color: #ad1110;
+  border-radius: 0.1rem;
+  
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#2a2c24
+  }
+  
+  /* header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  } */
+  
+  .album-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: center;
+    padding: 73px;
+    padding-right: 1px;
+    padding-bottom: 235px;
+  }
+  
+  .album-item {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .album-item a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .album-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .album-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+    transition: transform 0.3s ease-out ;
+  }
+
+  .album-item:hover img{
+    transform: scale(1.01);
+  }
+
+ 
+  
+  .album-item h2 {
+    margin: 10px 0;
+    font-size: 28px;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  .album-item p {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  footer {
+    background-color: #00000094;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+   
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+  }
+  
+  .footer-logo img {
+    height: 60px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 40px;
+    font-size: 20px;
+    display: flex;
+  }
+  
+  .footer-links li:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .footer-links a:hover {
+    color: #f1c40f;
+  }
+  
+  .footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-social li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .footer-social img{
+    height: 30px;
+    width: auto;
+  }
+
+
+  .footer-social a {
+    color: #a83434;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .footer-social a:hover {
+    color: #ffffff;
+  }
+  
+  .footer-bottom {
+    background-color: #1c1c1c;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  
+  
